@@ -14,9 +14,15 @@ body {
 
   height: 100%;
   width: 600px;
-  
-  /* background-color: darkslategrey; */
-  /* border: 1px solid red; */
+
+}
+.phone-title {
+  position: fixed;
+  height: 50px;
+  width: 600px;
+
+  background-color: slategray;
+  z-index: 2;
 }
 
 .up-title {
@@ -25,26 +31,102 @@ body {
   
   height: 100px;
   width: 600px;
-  background-color: darkslategrey;
-
-  /* display: flex;  */
-
-  /* border: 1px solid red; */
+  background-color: slategray;
+  
+  display: flex;
+  z-index: 2;
 }
 
-.images {
+.up-title a {
+  display: block;
+  text-decoration: none;
+}
+.up-title a.gouwuche {
+  position: absolute;
+  right: 0;
+}
+
+a .icon {
+  height: 40px;
+  padding: 30px;
+  filter: invert(100%);
+}
+.white {
+  filter: brightness(100);
+}
+
+.up-title span {
+  display: block;
+  font-size: 40px;
+  padding: 20px;
+  color: aliceblue;
+}
+
+.banner {
   position: relative;
   top: 150px;
 
   height: 300px;
-  
-  /* border: 1px solid red; */
+}
+.banner img {
+  height: 300px;
+  width: 600px;
+}
+.dot {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+
+  height: 30px;
+  width: 93px;
+}
+
+.dot ul {
+  display: inline-block;
+}
+
+.dot ul li {
+  list-style: none;
+  width: 15px;
+  height: 15px;
+
+  border-radius: 100%;
+  margin: 7px 8px;
+  background-color: gray;
+
+  float: left;
 }
 
 .tags {
   position: relative;
   top: 150px;
-  height: 250px;
 
-  /* border: 1px solid red; */
+  height: 250px;
+  margin-top: 30px;
+}
+
+.tags ul {
+  display: inline-block;
+}
+.tags ul li {
+  list-style: none;
+  height: 40px;
+  width: 120px;
+  
+  margin: 12px 25px;
+  padding: 7px 14px;
+  border: 1px solid gray;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 40%;
+  float: left;
+}
+a.tags {
+  position: relative;
+  top: 0;
+  text-decoration: none;
+  color:  black;
+}
+a:active .tags {
+  background-color: red;
 }
