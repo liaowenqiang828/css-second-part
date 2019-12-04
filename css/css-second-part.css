@@ -52,9 +52,6 @@ a .icon {
   padding: 30px;
   filter: invert(100%);
 }
-.white {
-  filter: brightness(100);
-}
 
 .up-title span {
   display: block;
@@ -122,12 +119,12 @@ a .icon {
   border-radius: 38px;
   float: left;
 }
-a.tags {
+.tags a {
   position: relative;
   top: 0;
   text-decoration: none;
   color:  black;
 }
-a:active .tags {
+.tags a:visited {
   background-color: red;
 }
