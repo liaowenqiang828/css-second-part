@@ -106,6 +106,10 @@ a .icon {
 .tags ul {
   display: inline-block;
 }
+.tags ul li:nth-child(2) {
+  color: red;
+}
+
 .tags ul li {
   list-style: none;
   height: 60px;
@@ -115,16 +119,14 @@ a .icon {
   padding: 7px 14px;
   border: 1px solid gray;
   text-align: center;
-  font-size: 40px;
   border-radius: 38px;
   float: left;
 }
-.tags a {
-  position: relative;
-  top: 0;
+.tag {
+  height: 76px;
+  width: 100%;
+
   text-decoration: none;
-  color:  black;
-}
-.tags a:visited {
-  background-color: red;
+  color: black;
+  font-size: 40px;
 }
